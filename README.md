@@ -16,12 +16,12 @@
 3. It has changed from ResNet-18 to ResNet-152. You can change back or try to use ResNet-152 as Teacher & ResNet-18 as Student.
 
 # Hardware
-Merely for the reference of the following result. Always not expected to get the same result data by given the same models.
+​	It is merely for the reference of the following training result. Always not expected to get the same result data by given the same models.
 
 |  Component    |   Description  |  Note  |
 | :---------:  |  :-----: |  ------- |
 | CPU          | Intel(R) Xeon(R) Gold 6138 CPU @ 2.00GHz   2.00 GHz |  |
-| GPU          | None | Better GPU, better training. |
+| GPU          | None in this training | Better GPU, better training. |
 | RAM          | 64.0 GB |  |
 
 # Training
