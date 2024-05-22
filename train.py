@@ -513,9 +513,9 @@ class STPM(pl.LightningModule):
 
 def get_args():
     parser = argparse.ArgumentParser(description='ANOMALYDETECTION')
-    parser.add_argument('--phase', choices=['train', 'test', 'predict'], default='train')
+    parser.add_argument('--phase', choices=['train', 'test', 'predict'], default='predict')
     parser.add_argument('--dataset_path', default='E:\CODE\Python\defect_detection_experiment\data\mvtec_anomaly_detection')
-    parser.add_argument('--category', default='bottle')  # 设置类别
+    parser.add_argument('--category', default='wood')  # 设置类别
     parser.add_argument('--num_epochs', default=100)  # 20000
     parser.add_argument('--lr', default=0.4)  # 学习率
     parser.add_argument('--momentum', default=0.9)  # 动量
@@ -523,9 +523,9 @@ def get_args():
     parser.add_argument('--batch_size', default=4)  # 追求精度建议设置为1-4
     parser.add_argument('--load_size', default=256)  # 256
     parser.add_argument('--input_size', default=256)
-    parser.add_argument('--project_path', default=r'./test')  # 设置训练完毕的模型存放路径
+    parser.add_argument('--project_path', default=r'./test')  # 设置训练完毕的模型存放路径。模型一经训练则无法再次训练，只能用作测试或预测。
     parser.add_argument('--save_anomaly_map', default=True)
-    parser.add_argument('--amap_mode', choices=['mul', 'sum'], default='mul')
+    parser.add_argument('--amap_mode', choices=['mul', 'sum'], default='mul')  # 异常特征映射图的融合方式，乘积或求和
     parser.add_argument('--val_freq', default=5)
     parser.add_argument('--weights_file_version', type=str, default='version_0')
     parser.add_argument('--predict_path', default=None)
