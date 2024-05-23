@@ -16,7 +16,7 @@
 3. It has changed from ResNet-18 to ResNet-152. You can change back or try to use ResNet-152 as Teacher & ResNet-18 as Student.
 
 ```
-├ ─ test # model test file
+├ ─ test # models saved
 │   ├ ─ bottle
 │   └ ─ ......
 ├── train.py # model training
@@ -47,6 +47,7 @@
 # Training
 
 ```bash
+# torch==1.12.1 torchvision=0.13.1 opencv-python==4.5.2.52
 pip install -r requirements.txt
 ```
 
@@ -57,9 +58,9 @@ python train.py --phase=train --dataset_path=...\mvtec_anomaly_detection --categ
 | Main Parameters | Note                                                         |
 | --------------- | ------------------------------------------------------------ |
 | --num_epochs    | epoch number for training                                    |
-| --lr            | learning rate                                                |
-| --momentum      |                                                              |
-| --weight_decay  |                                                              |
+| --lr            | optimizer parameter, learning rate                           |
+| --momentum      | optimizer parameter                                          |
+| --weight_decay  | optimizer parameter                                          |
 | --batch_size    | Set less than 4 if ensure better performance                 |
 | --project_path  | the path of models saved<br />Once a model are finished in training, It can't be re-training |
 
