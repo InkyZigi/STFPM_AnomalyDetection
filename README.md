@@ -11,7 +11,7 @@
 
 ​	This code is modified from hcw-00's ***STPM_anomaly_detection***, which is based on PyTorch-Lightning.
 
-1. It can generate "**grayscale** defect detection image" (ground-truth), which means the image is represented by only black and white. (By LuZikang)
+1. It can generate "**grayscale** defect detection image" (ground-truth mask), which means the image is represented by only black and white. (By LuZikang)
 2. Add an **prediction** module. (By YangBin)
 3. It has changed from ResNet-18 to ResNet-152. You can change back or try to use ResNet-152 as Teacher & ResNet-18 as Student.
 
