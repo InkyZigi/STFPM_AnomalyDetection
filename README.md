@@ -78,7 +78,7 @@ python train.py --phase=predict --predict_path=...\mvtec_anomaly_detection --cat
 
 or
 
-revise **detecting.py** and run it.
+Revise **detecting.py** and run it.
 
 # Results
 
@@ -105,9 +105,9 @@ revise **detecting.py** and run it.
 
 
 # Citation
-@inproceedings{wang2021student_teacher,
-    title={Student-Teacher Feature Pyramid Matching for Anomaly Detection},
-    author={Wang, Guodong and Han, Shumin and Ding, Errui and Huang, Di},
-    booktitle={The British Machine Vision Conference (BMVC)},
-    year={2021}
+@inproceedings{wang2021student_teacher,<br>
+&emsp;&emsp;title={Student-Teacher Feature Pyramid Matching for Anomaly Detection},<br>
+&emsp;&emsp;author={Wang, Guodong and Han, Shumin and Ding, Errui and Huang, Di},<br>
+&emsp;&emsp;booktitle={The British Machine Vision Conference (BMVC)},<br>
+&emsp;&emsp;year={2021}<br>
 }
